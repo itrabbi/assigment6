@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <!-- Bootstarp css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+      .bg-style{
+        background: rgba(235, 87, 87, 0.05);
+      };
+    </style>
+</head>
+<body>
+    <header class="text-center mt-4">
+        <h1>AI Universe Hub</h1>
+        <button class="btn btn-danger">Sort By Date</button>
+    </header>
+    <!-- Card Section -->
+    <main>       
+        <section class="container mt-4">
+            <div id="items-container" class="row row-cols-1 row-cols-md-3 g-4">
+            </div>
+        </section>
+        <section>
+          <!-- Modal -->
+        <div class="modal fade" id="itemDetailModal" tabindex="-5" aria-labelledby="itemDetailModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border border-0">
+                <h1 class="modal-title fs-5" id="itemDetailModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="item-details" class="modal-body">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- btn -->
+        <div id="show-all" class="text-center d-none mt-4">
+          <div id="showmore" class="btn btn-danger" id="show-all">See More</div>
+        </div>
+        </section>
+        <!-- Loader -->
+          <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <!-- Fontawesome Icon -->
+    <script src="https://kit.fontawesome.com/79a69a6069.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="index.js"></script>
+    
+</body>
+</html>
